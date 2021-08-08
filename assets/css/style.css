@@ -1,0 +1,27 @@
+/*Каскадность стилей*/
+
+*{
+    color: yellow;
+    text-decoration: overline;
+}
+
+li {
+    margin: 20px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.linkClass {
+    color: green;
+}
+
+#linkId {
+    color: blueviolet;
+}
+
+#linkId2 {
+    color: black;
+}

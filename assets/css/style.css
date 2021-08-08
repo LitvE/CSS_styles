@@ -31,7 +31,7 @@ a {
 /*seltctor:pseudoclass{
     property: value;
 }*/
-
+/* 
 :root{
     --first-font-size: 14px;
     --second-font-size: 20px;
@@ -79,4 +79,34 @@ div.divClass p{
     background-color: yellow;
     color: black;
     padding: 10px;
+} */
+
+/*Псевдоклассы дочерних элементов
+:first-child: представляет элемент, который является первым дочерним элементом
+
+:last-child: представляет элемент, который является последним дочерним элементом
+
+:nth-child(n): представляет дочерний элемент, который имеет определенный номер n, например, второй дочерний элемент
+
+:nth-of-type(n): выбирает дочерний элемент определенного типа, который имеет определенный номер
+
+*/
+
+a{
+    display: block;
+}
+
+a:first-child{     
+    background-color: blue;
+    color: red;
+}
+
+a:last-child{
+    background-color: red;
+    color: blue;
+}
+
+a:nth-child(2){
+    color: aqua;
+    font-weight: bold;
 }

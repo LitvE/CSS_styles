@@ -92,7 +92,7 @@ div.divClass p{
 
 */
 
-a{
+/* a{
     display: block;
 }
 
@@ -109,4 +109,77 @@ a:last-child{
 a:nth-child(2){
     color: aqua;
     font-weight: bold;
+} */
+/* 
+table, th, td{
+    border: 2px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 16 px;
+    font-weight: bold;
+}
+
+tbody:first-child { 
+    background-color: darkslategray;
+    color: white;
+}
+
+.planName{
+    background-color: darkslategray !important;
+    color: white ;
+}
+
+tr:nth-child(odd) td:nth-child(odd){
+    background-color:darkturquoise;
+}
+
+tr:nth-child(odd) td:nth-child(even){
+    background-color: paleturquoise;
+}
+
+
+tr:nth-child(even) td:nth-child(odd){
+    background-color: paleturquoise;
+}
+
+tr:nth-child(even) td:nth-child(even){
+    background-color: azure;
+}
+
+
+tfoot > tr{
+    background-color: grey !important;
+} */
+
+/*Псевдоэлементы*/
+
+p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+p.classP::first-letter{
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p.classP::first-line{
+    text-decoration: underline;
+}
+
+p.classP::selection{
+    background-color: chartreuse;
+    color: white;
+}
+
+p.classP::before{
+    content: url(https://fony-kartinki.ru/_ph/133/2/751828347.gif);
+}
+
+p.classP::after{
+    content: url(https://fony-kartinki.ru/_ph/133/2/751828347.gif);
 }

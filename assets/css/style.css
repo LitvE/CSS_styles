@@ -1,5 +1,5 @@
 /*Каскадность стилей*/
-
+/*
 *{
     color: yellow;
     text-decoration: overline;
@@ -24,4 +24,59 @@ a {
 
 #linkId2 {
     color: black;
+}
+*/
+/*Псевдокласс*/
+
+/*seltctor:pseudoclass{
+    property: value;
+}*/
+
+:root{
+    --first-font-size: 14px;
+    --second-font-size: 20px;
+    --hover-font-color: red;
+    --color-font: white;
+    --primary-color: black;
+    --second-color:blue;
+}
+
+a:link {
+    color:blue; 
+}
+a:visited {
+    color:pink; 
+}
+a:hover {
+    color:red; 
+}
+a:active  {
+    color:yellow; 
+}
+
+div{
+    background-color: var(--primary-color);
+    color: var(--color-font);
+    margin: 15px;
+}
+
+div:hover{
+    background-color: var(--second-color);
+    color: var(--hover-font-color);
+}
+
+div.class1:hover{
+    background-color: tomato;
+    color: white;
+}
+
+div.divClass:hover p{
+    display: block;
+}
+
+div.divClass p{
+    display: none;
+    background-color: yellow;
+    color: black;
+    padding: 10px;
 }
